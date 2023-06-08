@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="./news.js"></script>
+    <script src="./innews.js"></script>
+    <link rel="stylesheet" href="./homepage.css">
+    <link rel="stylesheet" href="./footer.css">
+    
+    
+  </head>
+<body onload="checkUser(), animation()">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./homepage.html">Main</a>
+        <a href="./restaurants.html">Restaurant</a>
+        <a href="ticket.html">Tickets</a>
+        <a href="./Enternainments.html">Entertainments</a>
+        <a href="./hotels.html">Hotel</a>
+        <a href="./about_us.html">Info</a>
+    </div>
+    <span class="header">
+        <div>
+            <li id="main"><span class="main" onclick="openNav()">&#9776;</span></li>
+        </div>
+        <div style="margin-top: 1%;">
+            <li id="KOLSAI_ID" style="text-align: center;"><img class="logo"
+                                         src="./logo_moon+light-removebg-preview.png">K O L S A Y</li>
+        </div>
+        <div class="id">
+            <li class="log-in"><p id="myprofile"></p></li>
+        </div>
+    </span>  
+
+
+<div class="main_container">
+  <div class="slideshow-container">
+      <div class="mySlides fade">
+          <a href="#" id="id3" onclick="callHotel(id)">
+              <img class="element" src="https://www.journalofnomads.com/wp-content/uploads/2022/05/Kolsai-Lakes-and-Kaindy-Lake-Kazakhstan.jpg">
+              <h1>Opening hours of the cable cars</h1>
+          </a>
+      </div>
+      <div class="mySlides fade">
+          <a href="#" id="id4" onclick="callHotel(id)">
+              <img class="element"
+                   src="https://aboutkazakhstan.com/blog/wp-content/uploads/2018/06/kolsay-lakes-kazakhstan-1.jpg">
+              <h1 style="margin-top: 9%;">Season is open!</h1>
+          </a>
+      </div>
+      <div class="mySlides fade">
+          <a href="#" id="id2" onclick="callHotel(id)">
+              <img class="element"
+                   src="https://minzifatravel.com/wp-content/uploads/2022/07/bb13ee612e3003cbd9c1.jpg">
+              <h1 style="padding-right: 30%;">The first competition "Opening of the season". </h1>
+          </a>
+      </div>
+      <div class="mySlides fade">
+          <a href="#" id="id7" onclick="callHotel(id)">
+              <img class="element" src="https://cdn.shymbulak-dev.com/media/114ab4591e13d15efb86c03c6d27793f.png">
+              <h1 style="padding-right: 32%;">How to Call for Emergency
+                  How to Call for Emergency</h1>
+          </a>
+      </div>
+      <div class="mySlides fade">
+          <a href="#" id="id9" onclick="callHotel(id)">
+              <img class="element"
+                   src="https://indyguide-web-development.s3.us-east-2.amazonaws.com/listings/images/Jeep-Tour-To-Kolsay-And-Kaindy-Lakes-In-Almaty-Region-1609572948731.jpg">
+              <h1 style="padding-right: 32%;">About Straps – Talking Again About Security</h1>
+          </a>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      <br>
+      <div style="text-align: center;">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+  </div>
+  <div class="half_container">
+      <div class="row_container_1">
+          <div><a href="./about_us.html"><img class="cont" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/60/8f/e0/caption.jpg?w=300&h=300&s=1"></a>
+              <h2>Info</h2>
+          </div>
+          <div><a href="./hotels.html"><img class="cont" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/IMG_9366-Kaindy-e.jpg/280px-IMG_9366-Kaindy-e.jpg"></a>
+              <h2>Hotels</h2>
+          </div>
+      </div>
+      <div class="row_container_1">
+          <div><a href="./ticket.html"><img class="cont"
+                    src="https://www.advantour.com/img/kazakhstan/kolsay-lakes2.jpg"></a>
+              <h2>Tickets</h2>
+          </div>
+          <div><a  href="./restaurants.html"><img class="cont" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2JBR3sYlYlV625yialFNGUjePF7l0eSEOEA&usqp=CAU"></a>
+              <h2>Restaurants</h2>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<div class="News">News</div>
+
+<div id="container">
+  <div id="objects">
+      <div class="object"><img src="https://www.asia-hikes.com/wp-content/uploads/2021/06/iStock-1273005120-800x800.jpg">
+          <div class="date_div">11.12.22
+              <div class="text_img">Regarding the incident on December 2022</div>
+              On 09.12.22, operation of the Medeu-Shymbulak cable cars was suspended
+          </div>
+      </div>
+      <div class="object"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_l6XNMAf177iyMcPp--SZgRlOU23ar_A_l8ANNZ7mTJsZmYNgmkazOpQuOgXTsRE3oRk&usqp=CAU">
+          <div class="date_div">10.12.22
+              <div class="text_img">The first competition "Opening of the season".</div>
+              On December 7-9 the resort hosted annual skiing competition "Opening of the season". The guys trained.
+          </div>
+      </div>
+      <div class="object"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjt0Nfk_VFZ2HUOEOUJVexTQrl757-ZSdk8z107d5Eb5mdmFndg6dRqJkjvG8ZcgdViUs&usqp=CAU">
+          <div class="date_div">30.12.22
+              <div class="text_img">Opening hours of the cable cars</div>
+              <br></div>
+      </div>
+      <div class="object"><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8_zPABnPxjWc6NqeGx91DOtryCRFRvzDJKMb_XErkMK7WLozuswIlu5mGlT4kYZdSbCk&usqp=CAU">
+          <div class="date_div">19.11.22
+              <div class="text_img">Season is open!</div>
+              Dear friends! We know that you’ve been waiting for this news...
+          </div>
+      </div>
+      <div class="object"><img
+              src="https://www.wandersmiles.com/wp-content/uploads/2020/04/Reflections-in-Kolsai-Lake-1-Kazakhstan.jpg">
+          <div class="date_div">09.11.22
+              <div class="text_img">Tour of the Resort’s Base Stations – Facilities at the Kolsay</div>
+              The Kolsay base station is the first point that you will reach at the resort. There is a car
+          </div>
+      </div>
+      <div class="object"><img
+              src="https://i.ytimg.com/vi/1Bs7x2X5JsQ/maxresdefault.jpg">
+          <div class="date_div">09.11.22
+              <div class="text_img">What Is a Season Pass?</div>
+              The winter season is coming soon, so it’s time to start preparing for the season!
+          </div>
+      </div>
+      <div class="object"><img src="https://indyguide-web-development.s3.us-east-2.amazonaws.com/listings/images/Jeep-Tour-To-Kolsay-And-Kaindy-Lakes-In-Almaty-Region-1609572948731.jpg">
+          <div class="date_div">09.11.22
+              <div class="text_img">What Is an Info Center?</div>
+              Taking care of our guests’ health is our primary responsibility. You can call rescu
+          </div>
+      </div>
+      <div class="object"><img
+              src="https://central-asia.guide/wp-content/uploads/2021/12/Kolsai_lake_2-1024x682.jpg">
+          <div class="date_div">08.11.22
+              <div class="text_img">How to Prepare for Traveling</div>
+              If you have never shoes before, this is not a reason to put off your trip to us
+          </div>
+      </div>
+      <div class="object"><img src="https://cdn.shymbulak-dev.com/media/114ab4591e13d15efb86c03c6d27793f.png">
+          <div class="date_div">08.11.22
+              <div class="text_img">How to Call for Emergency</div>
+              Taking care of our guests’ health is our primary responsibility. You can call
+          </div>
+      </div>
+  </div>
+  <div class="right_side_see_all">
+      <div class="date_div">09.11.22
+          <a href="#" id="id1" onclick="callHotel(id)">
+              <div class="name">Regarding the incident on December 2022</div>
+          </a></div>
+      <hr>
+      <div class="date_div">10.11.22<a href="#" id="id5" onclick="callHotel(id)">
+          <div class="name">Tour of the Resort’s Base Stations – Facilities at the Kolsay</div>
+      </a></div>
+      <hr>
+      <div class="date_div">11.11.22<a href="#" id="id8" onclick="callHotel(id)">
+          <div class="name">Welcome to the winter season❄️</div>
+      </a></div>
+      <div class="buttonss"><a href="./news.html">
+          <button id="button_see_all">See all</button>
+      </a></div>
+  </div>
+</div>
+
+
+<div class="News">What to do at the resort?</div>
+
+<div class="in-2">
+  <div class="double">
+      <div class="row-1">
+          <div>
+              <a href="./about_us.html"><img src="https://www.asia-hikes.com/wp-content/uploads/2021/06/Tourists-admiring-the-view-of-Kolsai-Lakes-National-Park-in-Kazakhstan-1024x683.jpg" alt="">
+              <h3>Kolsay</h3></a>
+          </div>
+          <div>
+              <a href="./restaurants.html"><img src="https://cdn.shymbulak-dev.com/media/e726ca32f950917dc304d6e2c16c585b.png" alt="">
+                  <h3>Eat delicious meal</h3></a>
+          </div>
+      </div>
+  </div>
+  <div class="single">
+      <div>
+          <a href="./hotels.html"><img src="https://cdn.shymbulak-dev.com/media/7e3ce17e1caf0f49bda7e25b11a0415d.jpg" alt="">
+          <h3>To spend the night</h3></a>
+      </div>
+      <div>
+          <a href="./Enternainments.html"><img src="https://cdn.shymbulak-dev.com/media/dcd58658eb36e70a1b401c81b1ce176a.png" alt="">
+          <h3>Ride on balloons</h3></a>
+      </div>
+      <div>
+        <a href="./Enternainments.html">
+          <img src="https://cdn.shymbulak-dev.com/media/ef63cc6caa0c0a3d8e12a33d1e0ac0f7.png" alt="">
+          <h3>Go paragliding</h3></a>
+      </div>
+  </div>
+</div>
+<footer>
+  <div class="f-1">
+      <div>
+          <b>Our restaurants</b><br><br>
+          <li><a href="">Oblaka restobar</a></li>
+          <li><a href="">Base camp Yurta</a></li>
+          <li><a href="">Marrone Rosso</a></li>
+          <li><a href="">Saray bar</a></li>
+          <li><a href="">Paul</a></li>
+          <li><a href="">Rifugio del Monte</a></li>
+      </div>
+      <div>
+          <b>Hotels</b><br><br>
+          <li><a href="">Tenir Eco Hotels</a></li>
+          <li><a href="">S.N.e.G.</a></li>
+          <li><a href="">Base camp Yurta</a></li>
+          <li><a href="">Bianca high-mountain chalets</a></li>
+          <li><a href="">Shymbulak Resort Hotel</a></li>
+      </div>
+  </div>
+  <div class="f-1">
+      <div>
+          <b>Entertainments</b><br><br>
+          <li><a href="">Alpine park</a></li>
+          <li><a href="">Paraplane</a></li>
+          <li><a href="">Snowmobile and ATV rides</a></li>
+          <li><a href="">Horse rides</a></li>
+          <li><a href="">Rope park Medeu</a></li>
+          <li><a href="">Gorilla Zipline</a></li>
+          <li><a href="">Rope park Shymbulak</a></li>
+          <li><a href="">Balloon track</a></li>
+
+      </div>
+      <div>
+          <b>Contact us</b><br><br>
+          <a href="">E-Mail: orta@edu.kz</a><br><br>
+          <a href="">Phone number: +7 727 331 77 77</a><br><br>
+          <a href="">Address: st. Kerey, Zhanibek Khandar 558/1, Almaty</a><br><br>
+          <div>
+                  <span><a href=""><img
+                          src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/facebook-132.png"
+                          width="35"></a></span>
+              <span><a href=""><img
+                      src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/twitter-158.png"
+                      width="35"></a></span>
+              <span><a href=""><img
+                      src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/instagram-47.png"
+                      width="35"></a></span>
+              <span><a href=""><img
+                      src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/youtube-117.png"
+                      width="35"></a></span>
+          </div>
+      </div>
+  </div>
+</footer>
+<script src="homepage.js"></script>
+<script src="./lab8.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+
+a {
+    text-decoration: none;
+}
+
+
+* {
+    box-sizing: border-box
+}
+
+.wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3%;
+}
+
+.wrapper h1 {
+    font-size: 43px;
+    margin: 3% 0;
+}
+
+.picture {
+    width: 100%;
+    height: 30vw;
+    background-image: url("https://dynamic-media-cdn.tripadvisor.com/media/photo-o/26/cd/e4/65/caption.jpg?w=1200&h=-1&s=1");
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.info {
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+}
+
+.info .text {
+    width: 70%;
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 500;
+}
+
+.info .text p {
+    margin: 0 5% 16px 0;
+}
+
+.info .text .grey {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 32px;
+}
+
+.info .text .quote {
+    position: relative;
+}
+
+.open {
+    width: 35px;
+}
+
+.close {
+    width: 35px;
+    rotate: 180deg;
+}
+
+.info .text .quote .quote_text {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0px 60px;
+}
+
+.numbers {
+    width: 30%;
+    height: auto;
+    background-color: rgba(36, 192, 239, 0.853);
+    border-radius: 10px;
+    padding: 2%;
+    margin-top: 6%;
+}
+
+.numbers h1 {
+    font-size: 80px;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 80px;
+    color: white;
+}
+
+.numbers p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+    color: #ecececeb;
+}
+@media (max-width:700px){
+    .info{
+        flex-wrap: wrap;
+    }
+    .numbers{
+        width: auto;
+        margin: auto;
+    }
+    .text{
+        margin: auto;
+    }
+}
+.picture {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  }
+  
+  .picture:hover {
+    box-shadow: 0px 7px 14px #8fc9f5f2;
+    transform: scale(1.05, 1.05);
+  }
+  .numbers {
+    box-shadow: 0px 2px 7px #000000ae;
+    transition: .3s;
+  }
+  
+  .numbers:hover {
+    box-shadow: 0px 7px 14px #8fc9f5f2;
+    transform: scale(1.15, 1.15);
+  }
+
+
+  

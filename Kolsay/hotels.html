@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Hotels</title>
+    <link rel="stylesheet" href="./hotels.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./ticket.css">
+
+    <script src="ticket.js"></script>
+    <script src="hotels.js"></script>
+    <script src="./lab8.js"></script>
+    <script src="./hotels_animation.js"></script>
+
+</head>
+<body onload="checkUser(), hotels_animation()">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="./homepage.html">Main</a>
+        <a href="./restaurants.html">Restaurant</a>
+        <a href="./ticket.html">Tickets</a>
+        <a href="./Enternainments.html">Entertainments</a>
+        <a href="./hotels.html">Hotel</a>
+        <a href="./about_us.html">Info</a>
+    </div>
+    <span class="header">
+        <div>
+            <li id="main"><span class="main" onclick="openNav()">&#9776;</span></li>
+        </div>
+        <div style="margin-top: 1%;">
+            <li id="KOLSAI_ID" style="text-align: center;"><img class="logo"
+                                         src="./logo_moon+light-removebg-preview.png">K O L S A Y</li>
+        </div>
+        <div class="id">
+            <li class="log-in"><p id="myprofile"></p></li>
+        </div>
+    </span>    
+ 
+<div class="contents">
+    <h1>Hotels</h1>
+    <div class="hotels_wrapper">
+        <a href="#" class="hotel-link" id="Guest_House_Kolsai_Lakes" onclick="callHotel(id)">
+            <div class="one_hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/273402489.jpg?k=858941fe8c9dc496fb65b37a247def0d4f865a43d50d11ffd5d95a44b746ef59&o=&hp=1" alt="photo">
+                <div class="hotel-data">
+                    <div class="hotel-data-desc">Guest House Kolsai Lakes</div>
+                    <div class="hotel-data-les">from 30 000 T</div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="hotel-link" id="Bereke_Kolsay_Resort" onclick="callHotel(id)">
+            <div class="one_hotel">
+                <img src="https://cdn.shymbulak-dev.com/media/7e3ce17e1caf0f49bda7e25b11a0415d.jpg" alt="photo">
+                <div class="hotel-data">
+                    <div class="hotel-data-desc">Bereke Kolsay Resort</div>
+                    <div class="hotel-data-les">from 60 000 T</div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="hotel-link" id="Kolsay_Lakes_Town" onclick="callHotel(id)">
+            <div class="one_hotel">
+                <img src="https://cf.bstatic.com/xdata/images/hotel/max1280x900/265092345.jpg?k=cdc31ab1e538a15aea71c52de00e7ebed716beefe1e6458dcc471b0fc9890643&o=&hp=1" alt="photo">
+                <div class="hotel-data">
+                    <div class="hotel-data-desc">Kolsay Lakes Town</div>
+                    <div class="hotel-data-les">from 40 000 T</div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="hotel-link" id="Kolsay_Lakes_Nomads" onclick="callHotel(id)">
+            <div class="one_hotel">
+                <img src="https://cdn.shymbulak-dev.com/media/7b883d193922fd4eacece42c49cf6683.jpg" alt="photo">
+                <div class="hotel-data">
+                    <div class="hotel-data-desc">Kolsay Lakes Nomads</div>
+                    <div class="hotel-data-les">from 120 000 T</div>
+                </div>
+            </div>
+        </a>
+        <a href="#" class="hotel-link" id="Glamping_Kolsay" onclick="callHotel(id)">
+            <div class="one_hotel">
+                <img src="https://www.economistjurist.es/wp-content/uploads/sites/2/2022/08/Foto-1.jpg" alt="photo">
+                <div class="hotel-data">
+                    <div class="hotel-data-desc">Glamping Kolsay</div>
+                    <div class="hotel-data-les">from 60 000 T</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<footer>
+    <div class="f-1">
+        <div>
+            <b>Our restaurants</b><br><br>
+            <li><a href="./restaurants.html">S.N.e.G</a></li>
+            <li><a href="./restaurants.html">Chalet</a></li>
+            <li><a href="./restaurants.html">Assorti</a></li>
+            <li><a href="./restaurants.html">Oblaka restobar</a></li>
+            <li><a href="./restaurants.html">Marrone Rosso</a></li>
+            <li><a href="./restaurants.html">Base camp Yurta</a></li>
+            <li><a href="./restaurants.html">Saray Bar</a></li>
+            <li><a href="./restaurants.html">Paul</a></li>
+            <li><a href="./restaurants.html">Rifugio del Monte</a></li>
+        </div>
+        <div>
+            <b>Hotels</b><br><br>
+            <li><a href="./hotels.html">Guest House Kolsay Lakes</a></li>
+            <li><a href="./hotels.html">Bereke Kolsay Resort</a></li>
+            <li><a href="./hotels.html">Kolsay Lakes Town</a></li>
+            <li><a href="./hotels.html">Kolsay Lakes Nomads</a></li>
+            <li><a href="./hotels.html">Glamping Kolsay</a></li>
+        </div>
+    </div>
+    <div class="f-1">
+        <div>
+            <b>Entertainments</b><br><br>
+            <li><a href="./Entertainments.html">Alpine park</a></li>
+            <li><a href="./Entertainments.html">Paraplane</a></li>
+            <li><a href="./Entertainments.html">Snowmobile and ATV rides</a></li>
+            <li><a href="./Entertainments.html">Horse rides</a></li>
+            <li><a href="./Entertainments.html">Rope park Medeu</a></li>
+            <li><a href="./Entertainments.html">Gorilla Zipline</a></li>
+            <li><a href="./Entertainments.html">Rope park Kolsay</a></li>
+            <li><a href="/Entertainments.html">Balloon track</a></li>
+
+        </div>
+        <div>
+            <b>Contact us</b><br><br>
+            <a href="http://www.eco-tourism.kz/05112012.html">E-Mail: kolsay-eco-tur@gmail.com</a><br><br>
+            <a href="">Phone number: +7 727 331 77 77</a><br><br>
+            <a href="">Address: st. Kerey, Zhanibek Khandar 558/1, Almaty</a><br><br>
+            <div>
+                    <span><a href="https://www.facebook.com/groups/854931824638438/posts/2254343474697259/"><img
+                            src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/facebook-132.png"
+                            width="35"></a></span>
+                <span><a href="https://twitter.com/syrymtau/status/1401618324304322560?lang=en"><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/twitter-158.png"
+                        width="35"></a></span>
+                <span><a href="https://www.instagram.com/kolsay.nomads/?hl=en"><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/instagram-47.png"
+                        width="35"></a></span>
+                <span><a href="https://youtu.be/1Bs7x2X5JsQ"><img
+                        src="https://icons.veryicon.com/png/128/internet--web/color-social-media-icon/youtube-117.png"
+                        width="35"></a></span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./homepage.js"></script>
+</body>
+</html>
